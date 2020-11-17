@@ -15,9 +15,9 @@ function Challenge1(array) {
 }
 document.getElementById("Challenge1").innerHTML =Challenge1(myArray1);
 
-function Challenge1(arr1,arr2) {
+function Challenge2(arr1,arr2) {
 
     return arr1.concat(arr2);
 
 }
-document.getElementById("Challenge2").innerHTML =myArray1.concat(myArray2);
+document.getElementById("Challenge2").innerHTML =Challenge2(myArray1,myArray2);
