@@ -22,6 +22,7 @@ function Challenge2(arr1,arr2) {
 }
 document.getElementById("Challenge2").innerHTML =Challenge2(myArray1,myArray2);
 
+
 var obj = {
     "name": "shahd",
     "age": "20"
@@ -56,4 +57,19 @@ function Challenge5(str) {
  }
  
  document.getElementById("Challenge5").innerHTML =Challenge5(str);
+
+ function Challenge6(arr) {
+    let len = arr.length;
+    for (let i = 0; i < len; i++) {
+        for (let j = 0; j < len; j++) {
+            if (arr[j] > arr[j + 1]) {
+                let tmp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = tmp;
+            }
+        }
+    }
+    return arr;
+};
+document.getElementById("Challenge6").innerHTML =Challenge6(myArray1);
 
