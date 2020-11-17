@@ -21,3 +21,17 @@ function Challenge2(arr1,arr2) {
 
 }
 document.getElementById("Challenge2").innerHTML =Challenge2(myArray1,myArray2);
+
+var obj = {
+    "name": "shahd",
+    "age": "20"
+ };
+ 
+ var found = Object.keys(obj).filter(function(key) {
+   return obj[key] === 'shahd';
+ });
+ 
+ if (found.length) {
+    document.getElementById("Challenge3").innerHTML ="found";
+ } else document.getElementById("Challenge3").innerHTML ="Not found";
+
