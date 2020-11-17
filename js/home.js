@@ -31,7 +31,17 @@ var obj = {
    return obj[key] === 'shahd';
  });
  
+ 
  if (found.length) {
     document.getElementById("Challenge3").innerHTML ="found";
  } else document.getElementById("Challenge3").innerHTML ="Not found";
+
+ function Challenge4(type) {
+    if (type instanceof Array) {
+        document.getElementById("Challenge4").innerHTML ="This is Array";
+      } else {
+        document.getElementById("Challenge4").innerHTML ="This is Not Array";
+      }
+}
+Challenge4(myArray1)
 
