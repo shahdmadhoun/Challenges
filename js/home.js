@@ -71,5 +71,6 @@ function Challenge5(str) {
     }
     return arr;
 };
-document.getElementById("Challenge6").innerHTML =Challenge6(myArray1);
+document.getElementById("Challenge6").innerHTML ="the sorted arr for " + 
+myArray1 + " is: " + Challenge6(myArray1);
 
