@@ -1,4 +1,4 @@
-var myArray = [4, -5, 0, 2, -67, 8, 10, -34 ];
+var myArray = [4, 5, -5, 2, -7, 8, 0, -34 ];
 
 function Challenge1(array) {
 
@@ -15,3 +15,6 @@ function Challenge1(array) {
 document.getElementById("Challenge1").innerHTML =Challenge1(myArray);
 
 
+var arr1 = [2, 3 ,4, 6, 90];
+var arr2 = [20, 43, 5, -22, 0];
+document.getElementById("Challenge2").innerHTML =arr1.concat(arr2);
