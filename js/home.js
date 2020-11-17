@@ -30,7 +30,7 @@ var obj = {
  var found = Object.keys(obj).filter(function(key) {
    return obj[key] === 'shahd';
  });
- 
+
  
  if (found.length) {
     document.getElementById("Challenge3").innerHTML ="found";
@@ -43,5 +43,17 @@ var obj = {
         document.getElementById("Challenge4").innerHTML ="This is Not Array";
       }
 }
-Challenge4(myArray1)
+Challenge4(myArray1);
+
+const str = 'my name is shahd madhoun';
+
+function Challenge5(str) {
+    var splitStr = str.toLowerCase().split(' ');
+    for (var i = 0; i < splitStr.length; i++) {
+        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+    }
+    return splitStr.join(' '); 
+ }
+ 
+ document.getElementById("Challenge5").innerHTML =Challenge5(str);
 
